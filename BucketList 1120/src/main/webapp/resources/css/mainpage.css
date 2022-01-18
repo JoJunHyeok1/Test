@@ -1,0 +1,235 @@
+@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+@import url(http://fonts.googleapis.com/earlyaccess/jejugothic.css);
+
+@import url(http://fonts.googleapis.com/earlyaccess/kopubbatang.css);
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+@font-face {
+	/* 나눔고딕 Regular */
+	font-family: 'Nanum Gothic';
+	font-style: normal;
+	font-weight: 400;
+	src: url(//fonts.gstatic.com/ea/nanumgothic/v5/NanumGothic-Regular.eot);
+	src:
+		url(//fonts.gstatic.com/ea/nanumgothic/v5/NanumGothic-Regular.eot?#iefix)
+		format('embedded-opentype'),
+		url(//fonts.gstatic.com/ea/nanumgothic/v5/NanumGothic-Regular.woff2)
+		format('woff2'),
+		url(//fonts.gstatic.com/ea/nanumgothic/v5/NanumGothic-Regular.woff)
+		format('woff'),
+		url(//fonts.gstatic.com/ea/nanumgothic/v5/NanumGothic-Regular.ttf)
+		format('truetype');
+}
+
+@font-face {
+	/* 나눔고딕 Bold */
+	font-family: 'Nanum Gothic';
+	font-style: normal;
+	font-weight: 700;
+	src: url(//fonts.gstatic.com/ea/nanumgothic/v5/NanumGothic-Bold.eot);
+	src:
+		url(//fonts.gstatic.com/ea/nanumgothic/v5/NanumGothic-Bold.eot?#iefix)
+		format('embedded-opentype'),
+		url(//fonts.gstatic.com/ea/nanumgothic/v5/NanumGothic-Bold.woff2)
+		format('woff2'),
+		url(//fonts.gstatic.com/ea/nanumgothic/v5/NanumGothic-Bold.woff)
+		format('woff'),
+		url(//fonts.gstatic.com/ea/nanumgothic/v5/NanumGothic-Bold.ttf)
+		format('truetype');
+}
+
+@font-face {
+	/* 나눔고딕 ExtraBold */
+	font-family: 'Nanum Gothic';
+	font-style: normal;
+	font-weight: 800;
+	src:
+		url(//fonts.gstatic.com/ea/nanumgothic/v5/NanumGothic-ExtraBold.eot);
+	src:
+		url(//fonts.gstatic.com/ea/nanumgothic/v5/NanumGothic-ExtraBold.eot?#iefix)
+		format('embedded-opentype'),
+		url(//fonts.gstatic.com/ea/nanumgothic/v5/NanumGothic-ExtraBold.woff2)
+		format('woff2'),
+		url(//fonts.gstatic.com/ea/nanumgothic/v5/NanumGothic-ExtraBold.woff)
+		format('woff'),
+		url(//fonts.gstatic.com/ea/nanumgothic/v5/NanumGothic-ExtraBold.ttf)
+		format('truetype');
+}
+
+html, body {
+	font-family: 'Nanum Gothic', sans-serif;
+	-ms-user-select: none;
+	-moz-user-select: -moz-none;
+	-khtml-user-select: none;
+	-webkit-user-select: none;
+	user-select: none;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+a:hover {
+	color: black;
+}
+
+.top_manu {
+	width: 100%;
+	height: 60px;
+}
+
+.line {
+	height: 100%;
+	width: 1000px;
+	margin: 0 auto;
+	/* border: 1px solid black; */
+}
+
+.logo {
+	position: absolute;
+	background-image: url(../img/logo.png);
+	object-fit: contain;
+	border: 1;
+	width: 150px;
+	height: 58.5px;
+	/* border: 1px solid black; */
+}
+
+.manu {
+	position: relative;
+	left: 55%;
+	top: 50%;
+	width: 450px;
+	transform: translateY(-50%);
+	color: white;
+	font-size: 1rem;
+	text-align: left;
+	font-style: normal;
+	font-family: 'Nanum Gothic', sans-serif;
+	font-weight: 800;
+	word-spacing: 50px;
+}
+
+.main_photo {
+	height: 1400px;
+	background-image: url(../img/mainphoto.jpg);
+	object-fit: contain;
+	background-size: cover;
+}
+
+.text1 {
+	position: relative;
+	color: #f1e2e2;
+	font-size: 3.5rem;
+	font-weight: 800;
+	left: 0px;
+	top: 150px;
+	font-family: 'KoPub Batang', serif;
+}
+
+.text2 {
+	position: relative;
+	color: black; 
+	font-weight: 800;
+	top: 210px;
+	text-align: center;
+	font-family: 'KoPub Batang', serif;
+	
+}
+
+.introduce_box {
+	position: relative;
+	background-color: #cacaca;
+	left: 50%;
+	transform: translateX(-50%);
+	top: 700px;
+	width: 700px;
+	height: 440px;
+/* 	border-radius: 30px; */
+	background-size: cover;
+	opacity:0.5/* 80% 투명도 */
+}
+
+.sub_back {
+	height: 800px;
+	background-color: #eaecef;
+}
+
+.container {
+	display: flex;
+	justify-content: space-evenly;
+	padding: 0;
+	vertical-align: middle;
+}
+
+.joinnotice {
+	/* 모집공고 */
+	background-color: #cacaca;
+	margin-top: 50px;
+	width: 400px;
+	height: 440px;
+	border-radius: 30px;
+	background-image: url(../img/main1.jpg);
+	background-size: cover;
+}
+
+.notice {
+	/* 게시판 */
+	background-color: #cacaca;
+	margin-top: 50px;
+	width: 400px;
+	height: 440px;
+	border-radius: 30px;
+	background-image: url(../img/main2.jpg);
+	background-size: cover;
+}
+
+.text3 {
+	/* 후기 */
+	position: relative;
+	color: gray;
+	font-size: 2.5rem;
+	font-weight: 800;
+	left: -365px;
+	top: 120px;
+	text-align: center;
+	/* line-height: 45px; */
+	font-family: 'Nanum Gothic', sans-serif ';
+}
+
+.text4 {
+	/* 게시판 */
+	position: relative;
+	color: gray;
+	font-size: 2.5rem;
+	font-weight: 800;
+	left: 99px;
+	top: 60px;
+	text-align: center;
+	font-family: '' Nanum Gothic ', sans-serif';
+}
+
+.bottom {
+	height: 150px;
+	background-color: #282828;
+}
+
+.text5 {
+	/* 아래 copyright */
+	position: relative;
+	color: white;
+	font-size: 1rem;
+	font-weight: 800;
+	/* left: 20px; */
+	top: 50%;
+	transform: translateY(-50%);
+	/* 상하좌우 중앙정렬 */
+	text-align: center;
+	/* font-family: 'KoPub Batang', serif; */
+}

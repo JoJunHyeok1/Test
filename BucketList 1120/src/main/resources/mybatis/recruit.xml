@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="Recruit">
+	<sql id="search">
+		<where>
+			<if test="search==1">
+				recruit.code=#{keyword}
+			</if>
+			<if test="search==2">
+				recruit.name LIKE CONCAT(CONCAT('%',#{keyword}),'%')
+			</if>
+			<if test="search==3">
+				recruit.part LIKE CONCAT(CONCAT('%',#{keyword}),'%')
+			</if>
+			
+		</where>
+	</sql>
+	<select id="list" resultType="Recruit">
+		SELECT * FROM recruit
+		<include refid="search"></include>
+		LIMIT #{offset},#{perPage}
+	</select>
+	<select id="item" resultType="Recruit">
+		SELECT * FROM recruit
+		WHERE code=#{code}
+	</select>
+	<insert id="add">
+		INSERT INTO recruit
+		VALUES(NULL,'user',#{name},#{part},date_format(NOW(),'%Y-%c-%e'),#{subject})
+	</insert>
+	<update id="update">
+		UPDATE recruit
+		SET name=#{name},part=#{part},subject=#{subject}
+		WHERE code=#{code}
+	</update>
+	<delete id="delete">
+		DELETE FROM recruit
+		WHERE code=#{code}
+	</delete>
+	<select id="total" resultType="Integer">
+		SELECT COUNT(*) FROM recruit
+		<include refid="search"></include>
+	</select>
+</mapper>

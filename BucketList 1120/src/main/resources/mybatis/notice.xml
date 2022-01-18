@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="Notice">
+	<sql id="search">
+		<where>
+			<if test="search==1">
+				notice.code=#{keyword}
+			</if>
+			<if test="search==2">
+				notice.name LIKE CONCAT(CONCAT('%',#{keyword}),'%')
+			</if>
+			<if test="search==3">
+				notice.contents LIKE CONCAT(CONCAT('%',#{keyword}),'%')
+			</if>
+		</where>
+	</sql>
+	<select id="notice" resultType="Notice">
+		SELECT * FROM NOTICE
+		<include refid="search"></include>
+		LIMIT #{offset},#{perPage}
+	</select>
+	<select id="item" resultType="Notice">
+		SELECT * FROM notice
+		WHERE
+		code=#{code}
+	</select>
+	<insert id="add">
+		INSERT INTO notice
+		VALUES(NULL,'user',#{name},#{contents},date_format(NOW(),'%Y-%c-%e'),#{info})
+	</insert>
+	<update id="update">
+		UPDATE notice
+		SET name=#{name},contents=#{contents},info=#{info}
+		WHERE code=#{code}
+	</update>
+	<delete id="delete">
+		DELETE FROM notice
+		WHERE code=#{code}
+	</delete>
+	<select id="total" resultType="Integer">
+		SELECT COUNT(*) FROM notice
+		<include refid="search"></include>
+	</select>
+</mapper>

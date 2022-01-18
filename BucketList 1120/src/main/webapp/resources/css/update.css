@@ -1,0 +1,450 @@
+@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+@import url(http://fonts.googleapis.com/earlyaccess/jejugothic.css);
+@import url(http://fonts.googleapis.com/earlyaccess/kopubbatang.css);
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    /* 나눔고딕 Regular */
+    font-family: 'Nanum Gothic';
+    font-style: normal;
+    font-weight: 400;
+    src: url(//fonts.gstatic.com/ea/nanumgothic/v5/NanumGothic-Regular.eot);
+    src: url(//fonts.gstatic.com/ea/nanumgothic/v5/NanumGothic-Regular.eot?#iefix) format('embedded-opentype'),
+        url(//fonts.gstatic.com/ea/nanumgothic/v5/NanumGothic-Regular.woff2) format('woff2'),
+        url(//fonts.gstatic.com/ea/nanumgothic/v5/NanumGothic-Regular.woff) format('woff'),
+        url(//fonts.gstatic.com/ea/nanumgothic/v5/NanumGothic-Regular.ttf) format('truetype');
+}
+
+@font-face {
+    /* 나눔고딕 Bold */
+    font-family: 'Nanum Gothic';
+    font-style: normal;
+    font-weight: 700;
+    src: url(//fonts.gstatic.com/ea/nanumgothic/v5/NanumGothic-Bold.eot);
+    src: url(//fonts.gstatic.com/ea/nanumgothic/v5/NanumGothic-Bold.eot?#iefix) format('embedded-opentype'),
+        url(//fonts.gstatic.com/ea/nanumgothic/v5/NanumGothic-Bold.woff2) format('woff2'),
+        url(//fonts.gstatic.com/ea/nanumgothic/v5/NanumGothic-Bold.woff) format('woff'),
+        url(//fonts.gstatic.com/ea/nanumgothic/v5/NanumGothic-Bold.ttf) format('truetype');
+}
+
+@font-face {
+    /* 나눔고딕 ExtraBold */
+    font-family: 'Nanum Gothic';
+    font-style: normal;
+    font-weight: 800;
+    src: url(//fonts.gstatic.com/ea/nanumgothic/v5/NanumGothic-ExtraBold.eot);
+    src: url(//fonts.gstatic.com/ea/nanumgothic/v5/NanumGothic-ExtraBold.eot?#iefix) format('embedded-opentype'),
+        url(//fonts.gstatic.com/ea/nanumgothic/v5/NanumGothic-ExtraBold.woff2) format('woff2'),
+        url(//fonts.gstatic.com/ea/nanumgothic/v5/NanumGothic-ExtraBold.woff) format('woff'),
+        url(//fonts.gstatic.com/ea/nanumgothic/v5/NanumGothic-ExtraBold.ttf) format('truetype');
+}
+
+html,
+body {
+    font-family: 'Nanum Gothic', sans-serif;
+    -ms-user-select: none;
+    -moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+
+}
+
+a {
+    text-decoration: none;
+    color: black;
+
+}
+
+a:hover {
+    color: black;
+}
+
+.top_manu {
+    width: 100%;
+    height: 60px;
+
+}
+
+.line {
+    height: 100%;
+    width: 1000px;
+    margin: 0 auto;
+    /* border: 1px solid black; */
+
+}
+
+.logo {
+    position: absolute;
+    background-image: url(../img/logo.png);
+    
+    object-fit: contain;
+    border: 1;
+    width: 150px;
+    height: 58.5px;
+    /* border: 1px solid black; */
+}
+
+.manu {
+    position: relative;
+    left: 55%;
+    top: 50%;
+    width: 450px;
+    transform: translateY(-50%);
+    color: white;
+    font-size: 1rem;
+    text-align: left;
+    font-style: normal;
+    font-family: 'Nanum Gothic', sans-serif;
+    font-weight: 800;
+    word-spacing: 50px;
+}
+
+
+
+/* .main_photo { */
+    /* height: 1400px; */
+    /* background-image: url(mainphoto.jpg); */
+    /* object-fit: contain; */
+/* } */
+
+.text1 {
+    position: relative;
+    color: #f1e2e2;
+    font-size: 3.5rem;
+    font-weight: 800;
+    left: 0px;
+    top: 150px;
+    font-family: 'KoPub Batang', serif;
+}
+
+.text2 {
+    position: relative;
+    color: black;
+    font-size: 2rem;
+    font-weight: 800;
+    top: 210px;
+    text-align: center;
+    font-family: 'KoPub Batang', serif;
+}
+
+.introduce_box {
+    position: relative;
+    background-color: white;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -170px;
+    width: 1920px;
+    height: 1406px;
+    /* border-radius: 30px; */
+
+}
+html {
+font-family: "Noto Sans KR", sans-serif;
+}
+
+/* 노말라이즈 */
+body, ul, li, h1, h2, h3, h4, h5, h6 {
+margin: 0;
+padding: 0;
+list-style: none;
+}
+
+a:link {
+color: black;
+}
+
+/* 라이브러리 */
+.con {
+margin: 0 auto;
+}
+
+.img-box>img {
+width: 100%;
+display: block;
+}
+
+.row::after {
+content: "";
+display: block;
+clear: both;
+}
+
+.cell {
+float: left;
+box-sizing: border-box;
+}
+
+.cell-right {
+float: right;
+box-sizing: border-box;
+}
+
+.margin-0-auto {
+margin: 0 auto;
+}
+
+.block {
+display: block;
+}
+
+.inline-block {
+display: inline-block;
+}
+
+.text-align-center {
+text-align: center;
+}
+
+.line-height-0-ch-only {
+line-height: 0;
+}
+
+.line-height-0-ch-only>* {
+line-height: normal;
+}
+
+.relative {
+position: relative;
+}
+
+.absolute-left {
+position: absolute;
+left: 0;
+}
+
+.absolute-right {
+position: absolute;
+right: 0;
+}
+
+.absolute-middle {
+position: absolute;
+top: 50%;
+transform: translateY(-50%);
+}
+
+/* 커스텀 */
+/* 반응형 레이아웃 */
+.con {
+max-width: 950px;
+}
+
+.con-min-width {
+min-width: 320px;
+}
+
+.top-menu a {
+text-decoration: none;
+color: gray;
+font-weight: bold;
+font-size: 1.2rem;
+}
+
+html, body { 
+overflow-x: hidden;
+}
+
+.table-common>table {
+width: 100%;
+border-collapse: collapse;
+}
+
+.table-common .btn-box {
+text-align:center;
+}
+
+.table-common>table th, .table-common>table td {
+border: 1px solid black;
+padding: 10px;
+}
+
+.article-list table {
+border:none;   
+border-top:2px solid lightgray;
+border-bottom:2px solid lightgray;
+}
+
+.article-list > table th, .article-list > table td {
+border:none;
+}
+
+.article-list > table td {
+border-bottom:1px solid lightgray;
+}
+
+.article-list > table thead {
+border-bottom:2px solid lightgray;
+background-color:#F5F5F5;
+}
+
+.article-detail {
+border:2px solid lightgray;
+}
+
+.article-detail > table {
+border:none;
+width:calc(100% - 100px);
+}
+
+.article-detail > table th, .article-detail > table td {
+border:none;
+}
+
+.article-detail > table tr:not(:last-child) {
+border-bottom:1px solid lightgray;
+}
+
+.article-detail > table tr:not(.article-body), .article-detail > table tr:not(.article-body) > td{
+height:20px;
+font-size:0.8rem;
+}
+
+.article-detail > table tr.article-title > td {
+height:40px;
+font-weight:bold;
+font-size:1.2rem;
+}
+
+.article-detail > table td:last-child {
+padding-right:100px;
+}
+
+.article-detail > .article-writer {
+width:100px;
+height:102px;
+background-color:lightgray;
+border-bottom:1px solid lightgray;
+text-align:center;
+}
+
+.article-detail > .article-writer .writer-icon {
+margin:0 auto;
+background-color:white;
+width:80px;
+height:80px;
+border-radius:50%;
+}
+
+.reply {
+margin-top:20px;
+border:2px solid lightgray;
+padding:15px;
+box-sizing:border-box;
+}
+
+.reply-form {
+padding:10px;
+}
+
+.reply-form > form input[type="text"] {
+width:200px;
+}
+
+.reply-form > form textarea {
+width:calc(100% - 100px);
+min-height:40px;
+}
+
+.reply-form > form input[type="submit"] {
+width:80px;
+height:40px;
+transform:translatey(-40%);
+}
+
+.reply-form > form > div:not(:last-child) {
+margin-bottom:5px;
+}
+
+.reply-list > table {
+border:none;
+}
+
+.reply-list > table th {
+display:none;
+}
+
+.reply-list > table td {
+border:none;
+}
+
+.reply-list > table tr:nth-child(2n+1) {
+background-color:rgba(0,0,0,0.06);
+}
+
+.reply-list > table td:first-child {
+font-weight:bold;
+}
+
+.reply-list > table td:first-child::after {
+content:" : ";
+font-weight:bold;
+}
+.write{
+position: relative;
+left: 1370px;
+font-size: 17px;
+
+}
+
+.sub_back {
+    height: 800px;
+    background-color: #eaecef;
+}
+
+
+
+.bottom {
+    height: 158px;
+    background-color: #282828;
+}
+.text5 {
+    /* 아래 copyright */
+    position: relative;
+    color: white;
+    font-size: 1rem;
+    font-weight: 800;
+    /* left: 20px; */
+    top: 50%;
+    transform: translateY(-50%); /* 상하좌우 중앙정렬 */
+    text-align: center;
+    /* font-family: 'KoPub Batang', serif; */
+}
+.write{
+    width: 100px;
+    height: 30px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color:black;
+}
+.name{
+    position: relative;
+    color:#282828;
+    top: 50px;
+    left: 550px;
+    font-size: 50px;
+}
+.contents{
+    position: relative;
+    color:#282828;
+    top: 50px;
+    left: 550px;
+    font-size: 50px;
+}
+.button{
+    position: relative;
+    width: 500px;
+    height: 500px;
+    color:#282828;
+    top: 70px;
+    left: 1180px;
+}
+  
+ 

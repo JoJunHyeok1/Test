@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN" "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+	<typeAliases>
+		<package name="kr.ac.kopo.bucketlist.model" /> <!--이거 쓰면 모델 계속쓸수있음 -->
+
+	</typeAliases>
+
+	<mappers>
+		<mapper resource="mybatis/notice.xml" />
+		<mapper resource="mybatis/application.xml" />
+		<mapper resource="mybatis/recruit.xml" />
+		
+
+	</mappers>
+</configuration>
